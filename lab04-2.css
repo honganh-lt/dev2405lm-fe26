@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+}
+#navTop{
+    width: 960px;
+    background: #ccc;
+    margin: 0 auto;
+    height: 40px;
+    
+}
+#navTop ul{
+    list-style: none;
+}
+#navTop ul li{
+    border-right: 1px solid #fff;
+    position: relative; /*hiện thi thẻ Li cha*/
+}
+#navTop ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 66px;
+    color: #2e2eee;
+}
+.selected, #navTop ul li a:hover{
+    background: red;
+    color: #fff;
+}
+
+#navMid{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #656363;
+    width: 230px;
+}
+#navMid ul li{
+    border: 1px solid #fff;/*cha*/
+    width: 100%;
+    font-size: 15px;
+}
+#navMid ul li a{
+    color: #060ea4;
+}
+#navMid2{
+    position: absolute;
+    background: #656363;
+    top: 0;
+    left: 100%;
+    width: 230px;
+}
+#navMid3{
+    position: absolute;
+    background: #656363;
+    top: 0;
+    left: 100%;
+    width: 230px;
+}
+#navMid, #navMid2,#navMid3{
+    display: none;
+}
+#navTop ul li:hover #navMid{
+    display: block;
+}
+#navMid ul li:hover #navMid2{
+    display: block;
+}
+#navMid2 ul li:hover #navMid3{
+    display: block;
+}
+
